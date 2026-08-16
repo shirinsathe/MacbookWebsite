@@ -30,8 +30,9 @@ export default function MacbookModel16(props) {
           child.material.color = new THREE.Color(color);
         }
       }
-    }, [color, scene])
-  })
+  });
+    }, [color, scene]);
+
 
   return (
     <group {...props} dispose={null}>

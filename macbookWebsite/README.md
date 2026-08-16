@@ -1,21 +1,173 @@
-# React + Vite
+#  MacBook Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Apple-inspired MacBook landing page built with React, Three.js, GSAP, and Tailwind CSS.
 
-Currently, two official plugins are available:
+This project recreates Apple's smooth, interactive product experience with 3D MacBook models, scroll-based animations, video textures, and responsive layouts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Apple-inspired responsive UI
+- Interactive 3D MacBook models
+- Video textures displayed on the MacBook screen
+- Scroll-triggered 3D animations
+- GSAP animations and ScrollTrigger
+- Tailwind CSS styling
+- Vite development environment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **Three.js**
+- **React Three Fiber**
+- **React Three Drei**
+- **GSAP**
+- **Zustand**
+- **React Responsive**
+- **clsx**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
 
+### Prerequisites
 
-## How to Run
+Make sure you have the following installed:
 
-cd into folder and run npm run dev
+- [Node.js](https://nodejs.org/)
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start the development server
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in your terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+## 📁 Project Structure
+
+```text
+MacbookWebsite/
+│
+├── public/
+│   ├── fonts/
+│   ├── images/
+│   ├── models/
+│   └── videos/
+│
+├── src/
+│   ├── components/
+│   │   ├── models/
+│   │   ├── three/
+│   │   ├── Features.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── ModelScroll.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── Performance.jsx
+│   │   ├── ProductViewer.jsx
+│   │   └── Showcase.jsx
+│   │
+│   ├── constants/
+│   │   └── index.js
+│   │
+│   ├── store/
+│   │   └── index.js
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## How It Works
+
+The website is divided into several interactive sections:
+
+### Hero
+
+Introduces the MacBook with a responsive hero section and animated visuals.
+
+### Product Viewer
+
+Displays an interactive 3D MacBook model that can be rotated and customized.
+
+### Showcase
+
+Uses video and masking effects to recreate Apple's cinematic product presentation.
+
+### Performance
+
+Displays animated performance graphics that move based on the user's scroll position.
+
+### Features
+
+Combines the 3D MacBook model with video textures and scroll-triggered animations.
+
+### Highlights
+
+Presents additional MacBook features using animated cards and responsive layouts.
+
+## Styling
+
+The project uses Tailwind CSS for utility-based styling with custom utilities, fonts, colors, and component styles defined in:
+
+```text
+src/index.css
+```
+
+## 🎥 3D & Animation
+
+3D models are loaded using:
+
+```js
+@react-three/fiber
+@react-three/drei
+```
+
+GSAP and ScrollTrigger are used for scroll-based animations:
+
+```js
+gsap
+gsap/ScrollTrigger
+```
+
+Video textures are applied to the MacBook display using `useVideoTexture`.
+
+## What I Learned
+
+This project was built as a way to practice:
+
+- React component architecture
+- Tailwind CSS
+- Three.js
+- React Three Fiber
+- 3D model rendering
+- GSAP timelines
+- ScrollTrigger
+- Video textures
+- Responsive design
+- Zustand state management
+
+## Author
+
+**Shirin Sathe**
+
+GitHub:  
+https://github.com/shirinsathe
